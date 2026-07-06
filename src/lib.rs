@@ -18,4 +18,14 @@ pub struct ArgusChainContract;
 
 #[contractimpl]
 impl ArgusChainContract {
+    pub fn submit_score(
+        env: Env,
+        wallet: Address,
+        asset_pair: Symbol,
+        score: u32,
+        benford_flag: bool,
+        ml_flag: bool,
+        confidence: u32,
+    ) {
+    }
 }
