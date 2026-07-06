@@ -41,5 +41,8 @@ impl ArgusChainContract {
             timestamp: env.ledger().timestamp(),
             confidence,
         };
+
+        let key = (wallet.clone(), asset_pair);
+        env.storage().persistent().set(&key, &risk_score);
     }
 }
