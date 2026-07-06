@@ -44,5 +44,10 @@ impl ArgusChainContract {
 
         let key = (wallet.clone(), asset_pair);
         env.storage().persistent().set(&key, &risk_score);
+
+        env.events().publish(
+            (symbol_short!("score_submitted"),),
+            (wallet, asset_pair, score, env.ledger().timestamp()),
+        );
     }
 }
