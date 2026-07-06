@@ -30,5 +30,8 @@ impl ArgusChainContract {
         if score > 100 {
             panic!("Score must be between 0 and 100");
         }
+        if confidence > 100 {
+            panic!("Confidence must be between 0 and 100");
+        }
     }
 }
