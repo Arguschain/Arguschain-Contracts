@@ -9,3 +9,6 @@ pub struct RiskScore {
     pub score: u32,
     pub benford_flag: bool,
 }
+
+#[contract]
+pub struct ArgusChainContract;
