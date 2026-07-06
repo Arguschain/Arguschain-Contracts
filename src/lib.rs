@@ -10,6 +10,7 @@ pub struct RiskScore {
     pub benford_flag: bool,
     pub ml_flag: bool,
     pub timestamp: u64,
+    pub confidence: u32,
 }
 
 #[contract]
