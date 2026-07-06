@@ -48,3 +48,7 @@ cargo build --target wasm32-unknown-unknown --release
 ```bash
 cargo test
 ```
+
+## License
+
+MIT
