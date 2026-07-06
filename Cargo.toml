@@ -2,3 +2,5 @@
 name = "arguschain-contracts"
 version = "0.2.0"
 edition = "2021"
+description = "ArgusChain Soroban smart contracts"
+license = "MIT"
