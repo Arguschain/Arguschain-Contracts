@@ -12,3 +12,7 @@ pub struct RiskScore {
 
 #[contract]
 pub struct ArgusChainContract;
+
+#[contractimpl]
+impl ArgusChainContract {
+}
