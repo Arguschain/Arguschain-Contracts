@@ -50,4 +50,9 @@ impl ArgusChainContract {
             (wallet, asset_pair, score, env.ledger().timestamp()),
         );
     }
+
+    pub fn get_score(env: Env, wallet: Address, asset_pair: Symbol) -> Option<RiskScore> {
+        let key = (wallet, asset_pair);
+        env.storage().persistent().get(&key)
+    }
 }
