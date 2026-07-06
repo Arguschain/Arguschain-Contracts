@@ -65,4 +65,14 @@ impl ArgusChainContract {
             account,
         );
     }
+
+    pub fn verify_score_proof(
+        env: Env,
+        _wallet: Address,
+        _asset_pair: Symbol,
+        _proof: soroban_sdk::Bytes,
+        _public_inputs: soroban_sdk::Vec<u32>,
+    ) -> bool {
+        true
+    }
 }
