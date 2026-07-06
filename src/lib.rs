@@ -8,6 +8,8 @@ use soroban_sdk::symbol_short;
 pub struct RiskScore {
     pub score: u32,
     pub benford_flag: bool,
+    pub ml_flag: bool,
+    pub timestamp: u64,
 }
 
 #[contract]
@@ -16,4 +18,3 @@ pub struct ArgusChainContract;
 #[contractimpl]
 impl ArgusChainContract {
 }
-    pub ml_flag: bool,
