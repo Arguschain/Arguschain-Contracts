@@ -55,4 +55,14 @@ impl ArgusChainContract {
         let key = (wallet, asset_pair);
         env.storage().persistent().get(&key)
     }
+
+    pub fn set_service_account(env: Env, account: Address) {
+        let service_account_key = symbol_short!("service");
+        account.require_auth();
+        env.storage().instance().set(&service_account_key, &account);
+        env.events().publish(
+            (symbol_short!("service_updated"),),
+            account,
+        );
+    }
 }
