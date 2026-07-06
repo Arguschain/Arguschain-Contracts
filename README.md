@@ -36,3 +36,9 @@ Configure authorized account.
 
 ### verify_score_proof
 Verify zero-knowledge proofs.
+
+## Building
+
+```bash
+cargo build --target wasm32-unknown-unknown --release
+```
