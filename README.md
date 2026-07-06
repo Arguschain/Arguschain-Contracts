@@ -22,3 +22,17 @@ RiskScore struct stores:
 - ml_flag (bool)
 - timestamp (u64)
 - confidence (0-100)
+
+## Contract Functions
+
+### submit_score
+Submit fraud detection score on-chain.
+
+### get_score
+Retrieve score for wallet/asset pair.
+
+### set_service_account
+Configure authorized account.
+
+### verify_score_proof
+Verify zero-knowledge proofs.
