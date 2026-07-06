@@ -16,3 +16,4 @@ pub struct ArgusChainContract;
 #[contractimpl]
 impl ArgusChainContract {
 }
+    pub ml_flag: bool,
