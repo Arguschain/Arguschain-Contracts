@@ -76,3 +76,7 @@ impl ArgusChainContract {
         true
     }
 }
+
+#[cfg(test)]
+mod tests {
+}
