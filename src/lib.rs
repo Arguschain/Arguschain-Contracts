@@ -33,5 +33,13 @@ impl ArgusChainContract {
         if confidence > 100 {
             panic!("Confidence must be between 0 and 100");
         }
+
+        let risk_score = RiskScore {
+            score,
+            benford_flag,
+            ml_flag,
+            timestamp: env.ledger().timestamp(),
+            confidence,
+        };
     }
 }
