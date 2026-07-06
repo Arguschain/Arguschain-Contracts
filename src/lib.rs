@@ -27,5 +27,8 @@ impl ArgusChainContract {
         ml_flag: bool,
         confidence: u32,
     ) {
+        if score > 100 {
+            panic!("Score must be between 0 and 100");
+        }
     }
 }
